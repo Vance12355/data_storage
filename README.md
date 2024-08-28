@@ -13,6 +13,14 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
+Примечание\
+Ограничение на максимальный размер загружаемых файлов по умолчанию установлен в 10MB\
+Это можно изменить в файле `settings.py`:
+```
+# settings.py
+MAX_UPLOAD_SIZE = 10 * 1024 * 1024  # 10 MB
+```
+
 ## API сервера:
 ### POST /api/upload/
 Загружает файл на сервер

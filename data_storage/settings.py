@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-MAX_UPLOAD_SIZE = 10485760  # 10MB
+MAX_UPLOAD_SIZE = 10 * 1024 * 1024  # 10MB
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
