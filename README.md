@@ -36,7 +36,7 @@ http://127.0.0.1:8000/api/list/
 
 ### Запуск клиентского приложения:
 ```bash
-cd Storage CLI
+cd 'Storage CLI'
 python client.py
 ```
 
