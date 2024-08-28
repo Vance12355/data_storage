@@ -63,3 +63,15 @@ def download_file(request, filename):
         return response
     else:
         return JsonResponse({"error": "File not found"}, status=404)
+
+
+@login_required
+@csrf_exempt
+@require_http_methods(["GET"])
+def list_files(request):
+    upload_dir = os.path.join(settings.MEDIA_ROOT, 'uploads')
+    try:
+        files = os.listdir(upload_dir)
+    except FileNotFoundError:
+        return JsonResponse({'error': 'Uploads directory not found'}, status=404)
+    return JsonResponse({'files': files})
