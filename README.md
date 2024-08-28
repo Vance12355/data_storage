@@ -14,7 +14,7 @@ python manage.py runserver
 ```
 
 ## API сервера:
-### GET /api/upload/
+### POST /api/upload/
 Загружает файл на сервер
 ```bash
 http://127.0.0.1:8000/api/upload/

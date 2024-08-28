@@ -69,6 +69,7 @@ def download_file(request, filename):
 @csrf_exempt
 @require_http_methods(["GET"])
 def list_files(request):
+    """Обработчик для получения списка файлов"""
     upload_dir = os.path.join(settings.MEDIA_ROOT, 'uploads')
     try:
         files = os.listdir(upload_dir)
