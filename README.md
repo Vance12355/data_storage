@@ -53,6 +53,7 @@ python client.py
 ### Пример загрузки файла на сервер
 
 ```bash
+<<<upload
 Введите путь к файлу для загрузки: path/to/your/file.jpg
 Файл 'file.jpg' успешно загружен.
 ```
@@ -60,6 +61,7 @@ python client.py
 ### Пример скачивания файла с сервера
 
 ```bash
+<<<download
 Введите имя файла для скачивания: file.jpg
 Введите путь к папке для сохранения файла: path/to/download/directory
 Файл 'file.jpg' успешно скачан в 'path/to/download/directory'
